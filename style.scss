@@ -1,0 +1,248 @@
+$border: 1px solid black;
+
+.grid-display {
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 110px);
+    grid-gap: 10px;
+    grid-template-rows: repeat(3, 110px);
+    justify-content: center;
+}
+
+#hamburger2 {
+
+    width: 50px;
+    height: 50px;
+    background: white;
+    border: $border;
+
+}
+
+#hamburger2 > div {
+    width: 30px;
+    height: 5px;
+    background-color: black;
+    position: absolute;
+
+}
+
+#hamburger2>div:nth-child(1){
+    transform: translate(10px, 10px) rotate(0);
+    transition: 200ms;
+}
+
+#hamburger2>div:nth-child(2){
+    transform: translate(10px, 22px) rotate(0);
+}
+
+#hamburger2>div:nth-child(3){
+    transform: translate(10px, 33px) rotate(0);
+    transition: 200ms;
+}
+#hamburger2:hover {
+    background-color: black;
+    
+}
+
+#hamburger2:hover > div {
+    background-color: white;
+}
+
+
+#hamburger2:hover>#h2-inner-1 {
+    transform:  translate(10px, 22px) rotate(45deg);
+}
+
+#hamburger2:hover>#h2-inner-2 {
+    opacity: 0;
+    transform:  scale(0,1) translate(10px, 22px) rotate(0);
+}
+
+
+#hamburger2:hover>#h2-inner-3 {
+    transform:  translate(10px,22px) rotate(-45deg);
+}
+
+
+span {
+    margin-top: 20px;
+}
+
+#hamburger3 {
+
+    width: 50px;
+    height: 50px;
+    background: white;
+    border: $border;
+
+}
+
+#hamburger3 > div {
+    width: 30px;
+    height: 5px;
+    background-color: black;
+    position: absolute;
+
+}
+
+#hamburger3>div:nth-child(1){
+    transform: translate(10px, 10px) rotate(0);
+    transition: 200ms;
+}
+
+#hamburger3>div:nth-child(2){
+    transform: translate(10px, 22px) rotate(0);
+}
+
+#hamburger3>div:nth-child(3){
+    transform: translate(10px, 33px) rotate(0);
+    transition: 200ms;
+}
+#hamburger3:hover {
+    background-color: black;
+    
+}
+
+#hamburger3:hover > div {
+    background-color: white;
+}
+
+
+#hamburger3:hover>#h3-inner-1 {
+    transform:  translate(5px, 13px) rotate(-45deg);
+}
+
+#hamburger3:hover>#h3-inner-2 {
+    transform:  translate(10px, 22px) rotate(0);
+}
+
+
+#hamburger3:hover>#h3-inner-3 {
+    transform:  translate(5px,30px) rotate(45deg);
+}
+
+#hamburger4 {
+
+    width: 50px;
+    height: 50px;
+    background: white;
+    border: $border
+
+}
+
+#hamburger4 > div {
+    width: 30px;
+    height: 5px;
+    background-color: black;
+    position: absolute;
+
+}
+
+#hamburger4>div:nth-child(1){
+    transform: translate(10px, 10px) rotate(0);
+    transition: 200ms;
+}
+
+#hamburger4>div:nth-child(2){
+    transform: translate(10px, 22px) rotate(0);
+}
+
+#hamburger4>div:nth-child(3){
+    transform: translate(10px, 33px) rotate(0);
+    transition: 200ms;
+}
+#hamburger4:hover {
+    background-color: black;
+    
+}
+
+#hamburger4:hover > div {
+    background-color: white;
+}
+
+
+#hamburger4:hover>#h4-inner-1 {
+    width: 25px;
+    transform:  translate(12px, 22px) rotate(45deg);
+}
+
+#hamburger4:hover>#h4-inner-2 {
+    /* transform:  translate(10px, 22px) rotate(0); */
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: 5px solid white;
+    border-radius: 50%;
+    transform: translate(5px, 5px);
+}
+
+
+#hamburger4:hover>#h4-inner-3 {
+    width: 25px;
+    transform:  translate(12px,22px) rotate(-45deg);
+}
+
+.box1 {
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    transition: 200ms;
+    left: 180px;
+    top: 100px;
+}
+
+.box1:hover {
+    transform: scale(1.25) rotate(12deg);
+}
+
+.box2-outer {
+    border-style: solid;
+    width: 50px;
+    height: 50px;
+    left: 400px;
+    top: 100px;
+}
+
+.box2 {
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    transition: 200ms;
+    position: relative;
+    top: calc(20%);
+    left: calc(20%)
+}
+
+.box2:hover {
+    background-color: rgb(127, 127, 187);
+    border-radius: 50%;
+}
+
+.box3-outer {
+    border-style: solid;
+    width: 50px;
+    height: 50px;
+}
+
+.box3 {
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    transition: 200ms;
+    position: relative;
+    bottom: calc(1%);
+    left: calc(20%);
+}
+
+.box3 p {
+    position: relative;
+    top: calc(40% - 5px);
+    left: calc(30% - 5px);
+    color: white;
+    font-size: 11px;
+}
+
+.box3:hover {
+    background-color: rgb(255, 151, 6);
+    transform: scale(1.25) rotate(12deg);
+}
